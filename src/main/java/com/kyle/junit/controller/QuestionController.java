@@ -13,7 +13,6 @@ import com.kyle.junit.domain.BooleanQuestion;
 import com.kyle.junit.domain.PercentileQuestion;
 import com.kyle.junit.domain.Question;
 
-import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.time.Clock;
@@ -54,7 +53,7 @@ public class QuestionController {
    void setClock(Clock clock) {
       this.clock = clock;
    }
-   // ...
+   // ...q
 
    void deleteAll() {
       executeInTransaction(
