@@ -133,6 +133,8 @@ public class AssertTest {
     @Ignore
     public void assertDoublesEqual() {
         assertThat(2.32 * 3, equalTo(6.96));
+        assertThat(2.32 * 3, is(6.96));
+
     }
 
     @Test
@@ -150,7 +152,7 @@ public class AssertTest {
     public void throwsWhenWithdrawingTooMuch() {
         account.withdraw(50);
     }
-    
+
     //룰을 생성. 예상메세지가 일치하면 통과
     @Rule
     public ExpectedException thrown = ExpectedException.none();
